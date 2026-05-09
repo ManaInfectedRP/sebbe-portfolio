@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(curl -s \"https://api.github.com/users/Quoxic/repos?per_page=100\")",
+      "Bash(curl -s \"https://api.github.com/search/users?q=sebbelarsson9601@gmail.com\")",
+      "Bash(curl -s \"https://api.github.com/users/ManaInfectedRP/repos?per_page=100&sort=updated\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(r['name'], '|', r.get\\('description',''\\), '|', r.get\\('language',''\\), '|', r['html_url'], '|', r.get\\('homepage',''\\)\\) for r in d]\")",
+      "Bash(npm create *)",
+      "Bash(yes)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(python -c 'from PIL import Image; im = Image.open\\('\\\\''__TRACKED_VAR__'\\\\''\\); print\\('\\\\''__TRACKED_VAR__'\\\\'', im.size, im.format\\)')",
+      "Bash(cp \"/c/Users/quo/AppData/Local/Temp/38ad0382-2953-4a83-bff3-bfd097f7cd3e.tmp\" \"/tmp/check1.webp\")",
+      "Bash(python -c \"from PIL import Image; im = Image.open\\('/tmp/check1.webp'\\); print\\(im.size, im.format\\)\")",
+      "Bash(cp \"C:/Users/quo/AppData/Local/Temp/38ad0382-2953-4a83-bff3-bfd097f7cd3e.tmp\" \"C:/Users/quo/AppData/Local/Temp/check1.webp\")",
+      "Bash(python -c \"from PIL import Image; im = Image.open\\(r'C:\\\\\\\\Users\\\\\\\\quo\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\check1.webp'\\); print\\(im.size, im.format\\)\")"
+    ]
+  }
+}
