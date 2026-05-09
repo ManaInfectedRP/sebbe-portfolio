@@ -14,12 +14,7 @@ export default function Contact() {
       label: 'GitHub',
       value: 'github.com/ManaInfectedRP',
       href: 'https://github.com/ManaInfectedRP',
-    },
-    {
-      label: 'Phone',
-      value: '0768-855568',
-      href: 'tel:+46768855568',
-    },
+    }
   ];
 
   return (
