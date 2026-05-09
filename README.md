@@ -2,7 +2,7 @@
 
 Personal portfolio site built with **React 18 + TypeScript + Vite**. Single-page layout with a hero, about section, project grid, and a clickable modal for each project's case study. Styled with modern hand-written CSS — no framework dependency.
 
-**Live site:** _add your Render URL once deployed_
+**Live site:** https://sebbe-portfolio.onrender.com
 
 ---
 
