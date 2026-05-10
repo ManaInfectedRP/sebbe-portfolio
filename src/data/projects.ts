@@ -46,6 +46,33 @@ const allProjects: Project[] = [
     isPrivate: true,
   },
   {
+    id: 'work-searcher',
+    title: 'WorkSearcher',
+    tagline:
+      'Swedish job aggregator — React dashboard + FastAPI backend, AI-scored postings.',
+    description:
+      'Full-stack job-search dashboard that aggregates Swedish job listings from JobTech / Arbetsförmedlingen, Adzuna, Greenhouse and Lever ATS feeds. A FastAPI backend orchestrates fetch → MinHash LSH near-duplicate removal → location/title filtering → optional OpenAI enrichment that produces a per-job summary and a relevance score using Structured Outputs. The React frontend lets you search by role and city and renders the deduped, scored results in a single table. Connector pattern makes adding new sources a one-file change.',
+    image: ph('0b6e4f', 'WorkSearcher'),
+    tech: [
+      'React',
+      'FastAPI',
+      'Python',
+      'PostgreSQL',
+      'OpenAI gpt-4o-mini',
+      'MinHash LSH',
+      'Docker',
+    ],
+    highlights: [
+      'Pluggable connector protocol — JobTech, Adzuna, Greenhouse, Lever',
+      'MinHash LSH near-duplicate removal across sources',
+      'Per-job summary + relevance score via OpenAI Structured Outputs',
+      'EN→SV translation pass for foreign listings',
+      'pytest-covered backend with async connector tests',
+    ],
+    github: 'https://github.com/ManaInfectedRP/WorkSearcher',
+    year: '2026',
+  },
+  {
     id: 'sebbe-pygame',
     title: 'SebbePyGame',
     tagline:
