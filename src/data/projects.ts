@@ -70,6 +70,7 @@ const allProjects: Project[] = [
       'pytest-covered backend with async connector tests',
     ],
     github: 'https://github.com/ManaInfectedRP/WorkSearcher',
+    demo: 'https://worksearcher-web.onrender.com',
     year: '2026',
   },
   {
