@@ -243,20 +243,31 @@ const allProjects: Project[] = [
   },
   {
     id: 'voice-cloning',
-    title: 'SebbeVoiceCloning',
-    tagline: 'Python voice-cloning experiment using AI speech models.',
+    title: 'VoiceClone Studio',
+    tagline:
+      'Clone any voice and synthesize speech — GUI + CLI, multi-language support.',
     description:
-      'AI-powered voice cloning project written in Python. Explores text-to-speech and voice synthesis using modern open-source models. Built during AI specialization studies at NBI/Handelsakademin.',
-    image: ph('b8336a', 'AI+Voice+Cloning'),
-    tech: ['Python', 'AI/ML', 'TTS', 'Audio'],
-    highlights: [
-      'Text-to-speech synthesis',
-      'Voice model fine-tuning',
-      'Audio processing pipeline',
-      'AI specialization coursework',
+      'Full-featured voice cloning and TTS toolkit built in Python. Zero-shot cloning via Coqui XTTS-v2, a standalone Windows GUI (optional standalone .exe), and a CLI for transcribe→translate→clone workflows. Supports multi-voice conversations, batch processing, and 17+ languages with optional GPU acceleration (CUDA).',
+    image: ph('b8336a', 'VoiceClone+Studio'),
+    tech: [
+      'Python 3.11',
+      'Coqui TTS (XTTS-v2)',
+      'Faster Whisper',
+      'FFmpeg',
+      'CUDA (optional GPU acceleration)',
+      'Tkinter / GUI',
+      'PyInstaller',
     ],
-    github: 'https://github.com/ManaInfectedRP/SebbeVoiceCloning',
-    year: '2025',
+    highlights: [
+      'Zero-shot voice cloning (Coqui XTTS-v2) — no training required',
+      'Standalone Windows GUI with drag-and-drop workflow and .exe build',
+      'CLI: transcribe → translate → clone, plus text-to-speech mode',
+      'Multi-voice conversations, per-voice language setting, and batch processing',
+      'Supports 17+ languages and GPU acceleration (first-run model download ≈2GB)',
+      'Accurate audio processing pipeline with FFmpeg integration',
+    ],
+    github: 'https://github.com/ManaInfectedRP/VoiceClone',
+    year: '2026',
   },
 ];
 
