@@ -18,6 +18,11 @@ const experience = [
     place: 'NBI/Handelsakademin, Halmstad',
   },
   {
+    period: '2026 - Present',
+    role: '2nd LIA Full-Stack Developer',
+    place: 'Podmanager.AI',
+  },
+  {
     period: '2025 — 2025',
     role: 'Full-Stack Developer LIA Intern',
     place: 'Podmanager.AI',
