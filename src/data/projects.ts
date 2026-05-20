@@ -46,6 +46,38 @@ const allProjects: Project[] = [
     isPrivate: true,
   },
   {
+    id: 'PodPlayer-AI',
+    title: 'PodPlayer AI',
+    tagline: 'Full-stack podcast & audiobook platform — PWA + React Native app sharing one FastAPI backend.',
+    description:
+      'A production podcast and audiobook platform built as both a Progressive Web App and a React Native (Expo) mobile app, connected to a shared FastAPI backend. Supports full audio/video streaming with background playback and offline downloads, AI-generated playlists (including Calendar Picks that pulls from the user\'s calendar), and a Creator Hub with analytics, Flash Drop announcements, and RSS podcast import. The platform includes an in-app PodCoin economy with 11 unlockable themes, avatar frames, and paywalled episode/podcast credits, plus a gamification layer of XP, levels, streaks, and achievement badges.',
+    image: ph('4a90e2', 'PodPlayer+AI'),
+    tech: [
+      'React 18',
+      'TypeScript',
+      'React Native',
+      'Expo SDK 54',
+      'Zustand',
+      'FastAPI',
+      'MongoDB',
+      'Tailwind CSS',
+      'Vite',
+      '@tanstack/react-virtual',
+    ],
+    highlights: [
+      'Audio/video streaming with background playback, lock-screen controls, and offline downloads',
+      'AI playlists — "Made For You" and Calendar Picks built from the user\'s upcoming events',
+      'Creator Hub with episode analytics, Flash Drop recorder, and direct RSS podcast import',
+      'In-app PodCoin store: 11 themes, avatar frames, and paywalled content unlocks',
+      'Gamification — XP, levels, streaks, and achievement badges per user account',
+      'Episode collections, timestamped bookmarks, voice notes, and full listening history',
+      'Virtualised episode lists (react-virtual) supporting 500+ episode catalogs without jank',
+      'PWA (web) and React Native (mobile) sharing one FastAPI/MongoDB backend',
+    ],
+    year: '2026',
+    isPrivate: true,
+  },
+  {
     id: 'work-searcher',
     title: 'WorkSearcher',
     tagline:

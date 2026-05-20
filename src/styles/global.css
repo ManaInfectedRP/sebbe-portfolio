@@ -881,6 +881,106 @@ main > section {
 }
 
 /* ==========================================================================
+   References
+   ========================================================================== */
+.references {
+  background: var(--bg-elev);
+  border-block: 1px solid var(--border);
+}
+
+.references__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.ref-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease, transform 0.25s var(--easing);
+}
+
+.ref-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.ref-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ref-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ref-card__name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.ref-card__role {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.ref-card__relation {
+  font-size: var(--fs-sm);
+  color: var(--text-dim);
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  margin: 0;
+}
+
+.ref-card__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.ref-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-sm);
+  color: var(--text-dim);
+  transition: color 0.15s ease;
+}
+
+.ref-card__link:hover {
+  color: var(--accent);
+}
+
+.ref-card__link svg {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.ref-card__link:hover svg {
+  color: var(--accent);
+}
+
+/* ==========================================================================
    Contact
    ========================================================================== */
 .contact {
