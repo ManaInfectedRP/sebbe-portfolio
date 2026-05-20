@@ -1,6 +1,6 @@
 import { references, type Reference } from '../data/references';
 
-function ReferenceCard({ ref: r }: { ref: Reference }) {
+function ReferenceCard({ reference: r }: { reference: Reference }) {
   return (
     <article className="ref-card">
       <div className="ref-card__header">
@@ -58,7 +58,7 @@ export default function References() {
 
         <div className="references__grid">
           {references.map((r) => (
-            <ReferenceCard key={r.id} ref={r} />
+            <ReferenceCard key={r.id} reference={r} />
           ))}
         </div>
       </div>
