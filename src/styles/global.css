@@ -980,6 +980,26 @@ main > section {
   color: var(--accent);
 }
 
+.ref-card__request {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 99px;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: border-color 0.15s ease, color 0.15s ease;
+  align-self: flex-start;
+}
+
+.ref-card__request:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ==========================================================================
    Contact
    ========================================================================== */
