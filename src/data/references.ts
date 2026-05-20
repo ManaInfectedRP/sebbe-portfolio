@@ -18,4 +18,13 @@ export const references: Reference[] = [
     phone: '076-100 04 71',
     relation: 'Supervisor during LIA internship at Podmanager.AI',
   },
+  {
+    id: 'kristoffer-larsson',
+    name: 'Kristoffer Larsson',
+    role: 'Big Brother',
+    company: 'N/A',
+    email: '',
+    phone: '',
+    relation: 'Older brother who can vouch for my character and work ethic',
+  },
 ];
