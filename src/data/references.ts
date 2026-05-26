@@ -19,6 +19,15 @@ export const references: Reference[] = [
     relation: 'Supervisor during LIA internship at Podmanager.AI',
   },
   {
+    id: 'robert-ploski',
+    name: 'Robert Ploski',
+    role: 'Thesis together & Class Mate',
+    company: 'NBI/Handelsakademin',
+    email: 'robert.ploski90@gmail.com',
+    phone: '',
+    relation: 'Student colleague during software development with ai at NBI/Handelsakademin',
+  },
+  {
     id: 'kristoffer-larsson',
     name: 'Kristoffer Larsson',
     role: 'Big Brother',
