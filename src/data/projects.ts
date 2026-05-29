@@ -17,6 +17,25 @@ const ph = (color: string, text: string) =>
 
 const allProjects: Project[] = [
   {
+    id: 'sebbes-kokbok',
+    title: 'Sebbes Kokbok',
+    tagline: 'Bilingual recipe collection — 45 dishes across Swedish, Korean, Chinese & Japanese cuisines.',
+    description:
+      'A personal recipe showcase built with React + Vite, featuring 45 recipes spanning four cuisines: Swedish husmanskost, Korean royal court cuisine, Chinese home cooking, and Japanese everyday classics. The single-page app has a scroll-driven layout with recipe cards grouped by cuisine, click-through modals with full recipe details, and a language toggle between English and Swedish. Native scripts (Hangul, Hanzi, Kanji/Kana) are preserved in recipe names. Containerised with a multi-stage Docker build and deployed as a static site on Render via Nginx.',
+    image: ph('c0392b', 'Sebbes+Kokbok'),
+    tech: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express', 'Docker', 'Nginx', 'Render'],
+    highlights: [
+      '45 recipes across Swedish, Korean, Chinese and Japanese cuisines',
+      'Bilingual UI — full English/Swedish language toggle',
+      'Native script preservation: Hangul, Hanzi, Kanji/Kana',
+      'Scroll-driven layout with cuisine-grouped cards and detail modals',
+      'Multi-stage Docker build served via Nginx on Render',
+    ],
+    github: 'https://github.com/ManaInfectedRP/Sebbes-kokbok',
+    demo: 'https://sebbes-kokbok.onrender.com',
+    year: '2026',
+  },
+  {
     id: 'song-studio',
     title: 'Song Studio',
     tagline:
