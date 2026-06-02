@@ -36,6 +36,27 @@ const allProjects: Project[] = [
     year: '2026',
   },
   {
+    id: 'Time-Converter',
+    title: 'Time Converter',
+    tagline: 'Real-time clock for 600+ IANA timezones — search, filter, and copy in one click.',
+    description:
+      'Browser-based timezone utility that displays live clocks for every IANA timezone — no build step, no backend, no dependencies. The page auto-updates every second using the native Intl.DateTimeFormat API. You can search by city, region, or country, or narrow down with region-based filters (Africa, Americas, Asia, Australia, Europe, Pacific). Each timezone card shows the current time, UTC offset, and a relative difference from your local clock (e.g. "+5:30h from you"), plus day badges when a zone is a full calendar day ahead or behind. A one-click copy button puts the time, date, and timezone name onto the clipboard. Deployed as a static file on Render — open the HTML and it just works.',
+    image: ph('1a5276', 'Time+Converter'),
+    tech: ['HTML', 'CSS', 'JavaScript', 'Intl API', 'Render'],
+    highlights: [
+      'Live clocks for 600+ IANA timezones, updated every second',
+      'Search by city, region, or country with instant filtering',
+      'Region-based filter buttons: Africa, Americas, Asia, Australia, Europe, Pacific',
+      'UTC offset and relative time difference ("+5:30h from you") per card',
+      'Day badges for zones a full calendar day ahead or behind',
+      'One-click clipboard copy of time, date, and timezone name',
+      'Zero dependencies — pure vanilla HTML/CSS/JS, no build step required',
+    ],
+    github: 'https://github.com/ManaInfectedRP/Time-Converter',
+    demo: 'https://time-converter-xi16.onrender.com',
+    year: '2026',
+  },
+  {
     id: 'song-studio',
     title: 'Song Studio',
     tagline:
