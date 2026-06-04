@@ -26,7 +26,12 @@ const skills = [
 
 const experience = [
   {
-    period: '2024 — Present',
+    period: '2026 - present',
+    role: 'Out of Work',
+    place: 'Home',
+  },
+  {
+    period: '2024 — 2026',
     role: 'Software Development Student (AI specialization)',
     place: 'NBI/Handelsakademin, Halmstad',
   },
