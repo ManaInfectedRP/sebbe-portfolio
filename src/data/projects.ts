@@ -16,6 +16,25 @@ const ph = (color: string, text: string) =>
   `https://placehold.co/800x400/${color}/ffffff?text=${encodeURIComponent(text)}`;
 
 const allProjects: Project[] = [
+    {
+    id: 'counting-arrays',
+    title: 'Counting Arrays — Problem Solving',
+    tagline: 'Div2 D / Div1 B competitive programming problem solved with DP + prefix-sum optimisation.',
+    description:
+      'Competitive programming solution for counting arrays of length n with elements in [1, M] that have exactly K left-to-right maxima, output modulo 10⁹+7. The brute-force O(Mⁿ) is hopeless at contest constraints, and a naïve Stirling-number approach breaks when M < n and ignores repeated elements. The accepted O(n·K·M) solution builds a 2-D DP over (position, maxima-count, current-max-value) and collapses the inner O(M²) "new maximum" transition — summing over all smaller prior maxima — into an O(M) prefix-sum pass. Includes a brute-force validator and a randomised test-case generator for stress testing.',
+    image: ph('1a3a5c', 'Counting+Arrays'),
+    tech: ['Python', 'Dynamic Programming', 'Combinatorics', 'Prefix Sums', 'NumPy'],
+    highlights: [
+      'Div2 D / Div1 B difficulty — nontrivial DP with a prefix-sum key insight',
+      'Three-attempt journey: brute force TLE → Stirling WA → optimised AC',
+      'O(n·K·M) accepted solution using prefix-sum to cut O(M²) transition to O(M)',
+      'Brute-force validator (solution_bf.py) for correctness checks on small inputs',
+      'Randomised generator for stress testing edge cases and large inputs',
+      'All 7 hand-crafted test cases pass, including 500×500 stress inputs',
+    ],
+    github: 'https://github.com/ManaInfectedRP/Counting-Arrays-ProblemSolving',
+    year: '2026',
+  },
   {
     id: 'sebbes-kokbok',
     title: 'Sebbes Kokbok',
