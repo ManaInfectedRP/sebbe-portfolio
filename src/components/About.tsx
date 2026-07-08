@@ -86,7 +86,7 @@ export default function About() {
             </p>
 
             <p>
-              In 2026 i founded the Website www.Kodstigen.se, where i am the Solo Developer.
+              In 2026 i founded the website www.Kodstigen.se, where i am the Solo Developer.
               A Learning Platform for people who want to learn programming in all type of technologies.
             </p>
 
