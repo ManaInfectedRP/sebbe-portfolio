@@ -27,6 +27,11 @@ const skills = [
 const experience = [
   {
     period: '2026 - present',
+    role: 'Founder & Full-Stack Developer',
+    place: 'www.Kodstigen.se',
+  },
+  {
+    period: '2026 - present',
     role: 'Out of Work',
     place: 'Home',
   },
@@ -69,15 +74,20 @@ export default function About() {
         <div className="about__grid">
           <div className="about__text">
             <p>
-              I started my career as a mechanic and warehouse worker in the
-              automotive industry. That background taught me how to break down
-              problems, follow procedures, and ship results — skills I now apply
-              to building software.
+              I’m a full-stack developer and AI enthusiast based in Halmstad, Sweden.
+              I have a hands-on background in mechanics and warehouse work, which has given me a practical understanding of problem-solving and efficiency.
+              My passion for technology led me to pursue software development, where I specialize in building web applications and exploring the potential of AI.
+              I’m always eager to learn new technologies and take on challenges that push my skills further.
             </p>
             <p>
-              Today I'm focused on full-stack development and AI. I enjoy building
-              real things people can use: video conferencing apps, REST APIs,
-              desktop games, and AI experiments. I'm actively looking for Work.
+              Today I'm focused on full-stack development and AI.
+              I enjoy building real things people can use: video conferencing apps, REST APIs, desktop games, and AI experiments.
+              I'm actively looking for Work.
+            </p>
+
+            <p>
+              In 2026 i founded the Website www.Kodstigen.se, where i am the Solo Developer.
+              A Learning Platform for people who want to learn programming in all type of technologies.
             </p>
 
             <div className="about__skills">

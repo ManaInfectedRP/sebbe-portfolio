@@ -23,7 +23,7 @@ export const references: Reference[] = [
     name: 'Antonio Prgomet',
     role: 'Teacher',
     company: 'NBI/Handelsakademin',
-    email: 'antonio.prgomet@nbi-handelsakademin.se',
+    email: 'antonio.ek@hotmail.se',
     phone: '',
     relation: 'Teacher and mentor during software development with ai studies at NBI/Handelsakademin',
   },

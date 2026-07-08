@@ -16,6 +16,24 @@ const ph = (color: string, text: string) =>
   `https://placehold.co/800x400/${color}/ffffff?text=${encodeURIComponent(text)}`;
 
 const allProjects: Project[] = [
+  {
+    id: 'Kodstigen',
+    title: 'Kodstigen.se',
+    tagline: 'A modern programming learning platform.',
+    description:
+      'Students pick learning paths in C++, Python, JavaScript, TypeScript, or Node.js, enroll in courses, complete lessons, pass quizzes, and earn XP while keeping a daily streak alive.',
+    image: ph('2c3e50', 'Kodstigen'),
+    tech: ['React', 'TypeScript', 'Vite'],
+    highlights: [
+      'Learning paths for C++, Python, JavaScript, TypeScript, and Node.js',
+      'Courses, lessons, quizzes, XP, and daily streak progression',
+      'Private repository',
+    ],
+    github: 'https://github.com/ManaInfectedRP/CodeForge',
+    demo: 'https://www.Kodstigen.se',
+    year: '2026',
+    isPrivate: true,
+  },
     {
     id: 'counting-arrays',
     title: 'Counting Arrays — Problem Solving',
