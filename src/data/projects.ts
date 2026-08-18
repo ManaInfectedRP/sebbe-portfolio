@@ -17,6 +17,28 @@ const ph = (color: string, text: string) =>
 
 const allProjects: Project[] = [
     {
+      id: 'unseen-worlds-unveiled',
+      title: 'Unseen Worlds Unveiled',
+      tagline: 'Dependency-free Cloudflare Worker site for an indie game studio I co-founded.',
+      description:
+        "Public site for Unseen Worlds Unveiled (uWu), an indie game studio with four co-founders, where I'm Co-Founder. Built as a static, framework-free site — no build step, no npm install — served by a Cloudflare Worker with static assets, plus a small Worker route for the contact form. Game and news pages are scaffolded from a shared template by a Node build script and never overwritten once hand-edited. A second script generates the SEO block for every page — canonical, Open Graph, Twitter tags, JSON-LD — by reading the rendered HTML back rather than duplicating content into a table, and regenerates robots.txt and the sitemap on every run.",
+      image: '/uwu-logo.png',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Cloudflare Workers', 'Wrangler', 'Resend', 'GA4'],
+      highlights: [
+        'Co-Founder — one of four founders behind the studio and its games',
+        'Zero-dependency static site: no build step, opens straight from disk',
+        'Cloudflare Worker serves static assets and routes /api/contact',
+        'Game and news pages scaffolded from a shared template, edits preserved on rebuild',
+        'Contact form validated server-side and relayed via Resend, with a honeypot and HTML-escaped output',
+        'Generated SEO block per page — canonical, Open Graph, JSON-LD, sitemap and robots.txt',
+        'GA4 conversion events for CTA clicks, store links, trailer plays and form funnel drop-off',
+        'View Transitions API for page transitions, fully disabled under prefers-reduced-motion',
+      ],
+      demo: 'https://unseenworldsunveiled.com',
+      year: '2026',
+      isPrivate: true,
+    },
+    {
       id: 'Kodstigen',
       title: 'Kodstigen.se',
       tagline: 'A modern programming learning platform, TypeScript + React + Vite, with courses, lessons, quizzes, XP and streaks.',

@@ -32,6 +32,11 @@ const experience = [
   },
   {
     period: '2026 - present',
+    role: 'Co-Founder',
+    place: 'UnseenWorldsUnveiled.com',
+  },
+  {
+    period: '2026 - present',
     role: 'Out of Work',
     place: 'Home',
   },
