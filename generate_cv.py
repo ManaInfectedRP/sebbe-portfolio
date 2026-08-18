@@ -93,7 +93,7 @@ def remove_table_borders(table):
         tbl.append(tblPr)
 
 # ═══════════════════════════════════════════════════════════════════════════════
-#  HEADER — two-column table (text left, photo right)
+#  HEADER, two-column table (text left, photo right)
 # ═══════════════════════════════════════════════════════════════════════════════
 PHOTO_PATH = r"c:\Users\quo\repos\SebbePortfolio2\public\me.jpg"
 
@@ -157,7 +157,7 @@ add_section_heading(doc, "Profile")
 
 profile_p = doc.add_paragraph(
     "I started my career as a mechanic and warehouse worker in the automotive industry. "
-    "That background taught me how to break down problems, follow procedures, and ship results — "
+    "That background taught me how to break down problems, follow procedures, and ship results, "
     "skills I now apply to building software. Today I'm focused on full-stack development and AI. "
     "I enjoy building real things people can use: video conferencing apps, REST APIs, desktop games, "
     "and AI experiments. Actively looking for work."
@@ -185,7 +185,7 @@ for period, role, place in experience:
     r1.bold           = True
     r1.font.size      = Pt(10)
     r1.font.color.rgb = DARK
-    r2 = p.add_run(f"  —  {place}")
+    r2 = p.add_run(f" ,  {place}")
     r2.font.size      = Pt(9)
     r2.font.color.rgb = MID
     # right-aligned period
@@ -235,16 +235,16 @@ add_section_heading(doc, "Selected Projects")
 projects = [
     (
         "PodPlayer AI", "2026", True,
-        "Full-stack podcast & audiobook platform — PWA + React Native app sharing one FastAPI backend.",
+        "Full-stack podcast & audiobook platform, PWA + React Native app sharing one FastAPI backend.",
         ["React 18, TypeScript, React Native, Expo SDK 54, FastAPI, MongoDB, Tailwind CSS"],
         ["Audio/video streaming with background playback, lock-screen controls, and offline downloads",
-         "AI playlists — 'Made For You' and Calendar Picks built from the user's upcoming events",
+         "AI playlists, 'Made For You' and Calendar Picks built from the user's upcoming events",
          "Creator Hub with episode analytics, Flash Drop recorder, and RSS podcast import",
          "In-app PodCoin store with 11 themes, avatar frames, and paywalled content"],
     ),
     (
         "SweetTeams", "2026", False,
-        "Microsoft Teams-like web app — WebRTC video for 50+ participants, screen sharing & chat.",
+        "Microsoft Teams-like web app, WebRTC video for 50+ participants, screen sharing & chat.",
         ["JavaScript, WebRTC, Node.js, SQLite, SendGrid, Render"],
         ["WebRTC P2P video for 50+ concurrent users",
          "Passwordless magic-link auth via SendGrid",
@@ -252,35 +252,35 @@ projects = [
     ),
     (
         "WorkSearcher", "2026", False,
-        "Swedish job aggregator — React dashboard + FastAPI backend, AI-scored postings.",
+        "Swedish job aggregator, React dashboard + FastAPI backend, AI-scored postings.",
         ["React, FastAPI, Python, PostgreSQL, OpenAI gpt-4o-mini, MinHash LSH, Docker"],
         ["Pluggable connector protocol: JobTech, Adzuna, Greenhouse, Lever",
          "MinHash LSH near-duplicate removal + per-job summary & relevance score (OpenAI)"],
     ),
     (
         "Song Studio", "2026", True,
-        "Desktop app that turns a one-line idea into a full song — lyrics, vocals & instrumentation.",
+        "Desktop app that turns a one-line idea into a full song, lyrics, vocals & instrumentation.",
         ["Python, OpenAI API, MusicGen, Suno Bark, PyTorch, customtkinter"],
         ["Two audio backends: local (MusicGen + Bark) or Suno cloud singing",
          "CUDA-aware: ~30 s per song on GPU"],
     ),
     (
         "VoiceClone Studio", "2026", False,
-        "Clone any voice and synthesize speech — GUI + CLI, 17+ languages, zero-shot.",
+        "Clone any voice and synthesize speech, GUI + CLI, 17+ languages, zero-shot.",
         ["Python 3.11, Coqui XTTS-v2, Faster Whisper, FFmpeg, CUDA, Tkinter, PyInstaller"],
-        ["Zero-shot voice cloning — no training required",
+        ["Zero-shot voice cloning, no training required",
          "Standalone Windows GUI + PyInstaller single-file exe"],
     ),
     (
         "Sebbes Kokbok", "2026", False,
-        "Bilingual recipe collection — 45 dishes across Swedish, Korean, Chinese & Japanese cuisines.",
+        "Bilingual recipe collection, 45 dishes across Swedish, Korean, Chinese & Japanese cuisines.",
         ["React, Vite, JavaScript, Node.js, Express, Docker, Nginx, Render"],
         ["Bilingual UI with full English/Swedish toggle",
          "Native script preservation: Hangul, Hanzi, Kanji/Kana"],
     ),
     (
         "SebbePyGame", "2025", True,
-        "Endless wave survival ARPG — 15 spells, support gems, deep skill tree.",
+        "Endless wave survival ARPG, 15 spells, support gems, deep skill tree.",
         ["Python 3.11, Pygame, JSON Save"],
         ["15 auto-cast spells with 3 support-gem socket slots each",
          "Passive skill tree, 12-slot equipment, crafting, breach events"],
@@ -349,7 +349,7 @@ for title, year, is_private, tagline, tech_list, highlights in projects:
 add_section_heading(doc, "Education")
 
 edu = [
-    ("2024 – 2026", "Higher Vocational Education — Software Development with AI Specialization",
+    ("2024 – 2026", "Higher Vocational Education, Software Development with AI Specialization",
      "NBI/Handelsakademin, Halmstad"),
 ]
 for period, degree, school in edu:

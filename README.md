@@ -1,6 +1,6 @@
-# Sebastian Larsson — Portfolio
+# Sebastian Larsson, Portfolio
 
-Personal portfolio site built with **React 18 + TypeScript + Vite**. Single-page layout with a hero, about section, project grid, and a clickable modal for each project's case study. Styled with modern hand-written CSS — no framework dependency.
+Personal portfolio site built with **React 18 + TypeScript + Vite**. Single-page layout with a hero, about section, project grid, and a clickable modal for each project's case study. Styled with modern hand-written CSS, no framework dependency.
 
 **Live site:** https://sebbe-portfolio.onrender.com
 
@@ -11,7 +11,7 @@ Personal portfolio site built with **React 18 + TypeScript + Vite**. Single-page
 - **React 18** + **TypeScript**
 - **Vite 5** for dev server and production build
 - Plain CSS with custom properties (no Tailwind / no UI library)
-- Project images served from [placehold.co](https://placehold.co/) — easy to swap for real screenshots later
+- Project images served from [placehold.co](https://placehold.co/), easy to swap for real screenshots later
 
 ## Project structure
 
@@ -68,9 +68,9 @@ To add a new project: open `src/data/projects.ts`, copy any existing project obj
 
 ## Deploy to Render
 
-This repo ships a [`render.yaml`](./render.yaml) Blueprint, so Render can configure everything automatically. Two options below — Blueprint is the easiest.
+This repo ships a [`render.yaml`](./render.yaml) Blueprint, so Render can configure everything automatically. Two options below, Blueprint is the easiest.
 
-### Option A — Blueprint (recommended, 1-click)
+### Option A, Blueprint (recommended, 1-click)
 
 1. **Push the repo to GitHub** (Render reads the source from a Git provider).
    ```bash
@@ -88,9 +88,9 @@ This repo ships a [`render.yaml`](./render.yaml) Blueprint, so Render can config
 6. Wait ~2 minutes for the first build. You'll get a URL like
    `https://sebbe-portfolio.onrender.com`.
 
-That's it — every push to `main` will auto-redeploy. Pull-request previews are enabled in the blueprint.
+That's it, every push to `main` will auto-redeploy. Pull-request previews are enabled in the blueprint.
 
-### Option B — Manual setup (no Blueprint)
+### Option B, Manual setup (no Blueprint)
 
 If you'd rather click through the UI:
 
@@ -132,4 +132,4 @@ Render watches the branch and redeploys on every push.
 
 ## License
 
-MIT — feel free to fork and use as a starting point for your own portfolio.
+MIT, feel free to fork and use as a starting point for your own portfolio.

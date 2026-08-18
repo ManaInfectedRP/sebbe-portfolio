@@ -90,7 +90,7 @@ export default function ProjectModal({ project, onClose }: Props) {
               </a>
             ) : (
               <span className="modal__private">
-                Private repository — source available on request.
+                Private repository, source available on request.
               </span>
             )}
             {project.demo && (

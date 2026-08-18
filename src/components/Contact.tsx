@@ -24,7 +24,7 @@ export default function Contact() {
           <span className="section__eyebrow">Contact</span>
           <h2 className="section__title">Let's build something together.</h2>
           <p className="section__lead">
-            Looking for an AI-focused developer for an LIA internship in 2026 — or
+            Looking for an AI-focused developer for an LIA internship in 2026, or
             just want to chat about a project? Reach out.
           </p>
         </div>

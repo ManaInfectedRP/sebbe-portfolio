@@ -20,7 +20,7 @@ function ReferenceCard({ reference: r }: { reference: Reference }) {
       <p className="ref-card__relation">{r.relation}</p>
 
       <a
-        href={`mailto:${MY_EMAIL}?subject=Reference request — ${r.name}`}
+        href={`mailto:${MY_EMAIL}?subject=Reference request, ${r.name}`}
         className="ref-card__request"
       >
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -41,7 +41,7 @@ export default function References() {
           <span className="section__eyebrow">References</span>
           <h2 className="section__title">People I've worked with.</h2>
           <p className="section__lead">
-            Contact details available on request — reach out via email.
+            Contact details available on request, reach out via email.
           </p>
         </div>
 

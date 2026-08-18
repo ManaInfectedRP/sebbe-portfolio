@@ -21,16 +21,16 @@ const allProjects: Project[] = [
       title: 'Unseen Worlds Unveiled',
       tagline: 'Dependency-free Cloudflare Worker site for an indie game studio I co-founded.',
       description:
-        "Public site for Unseen Worlds Unveiled (uWu), an indie game studio with four co-founders, where I'm Co-Founder. Built as a static, framework-free site — no build step, no npm install — served by a Cloudflare Worker with static assets, plus a small Worker route for the contact form. Game and news pages are scaffolded from a shared template by a Node build script and never overwritten once hand-edited. A second script generates the SEO block for every page — canonical, Open Graph, Twitter tags, JSON-LD — by reading the rendered HTML back rather than duplicating content into a table, and regenerates robots.txt and the sitemap on every run.",
+        "Public site for Unseen Worlds Unveiled (uWu), an indie game studio with four co-founders, where I'm Co-Founder. Built as a static, framework-free site, no build step, no npm install, served by a Cloudflare Worker with static assets, plus a small Worker route for the contact form. Game and news pages are scaffolded from a shared template by a Node build script and never overwritten once hand-edited. A second script generates the SEO block for every page, canonical, Open Graph, Twitter tags, JSON-LD, by reading the rendered HTML back rather than duplicating content into a table, and regenerates robots.txt and the sitemap on every run.",
       image: '/uwu-logo.png',
       tech: ['HTML', 'CSS', 'JavaScript', 'Cloudflare Workers', 'Wrangler', 'Resend', 'GA4'],
       highlights: [
-        'Co-Founder — one of four founders behind the studio and its games',
+        'Co-Founder, one of four founders behind the studio and its games',
         'Zero-dependency static site: no build step, opens straight from disk',
         'Cloudflare Worker serves static assets and routes /api/contact',
         'Game and news pages scaffolded from a shared template, edits preserved on rebuild',
         'Contact form validated server-side and relayed via Resend, with a honeypot and HTML-escaped output',
-        'Generated SEO block per page — canonical, Open Graph, JSON-LD, sitemap and robots.txt',
+        'Generated SEO block per page, canonical, Open Graph, JSON-LD, sitemap and robots.txt',
         'GA4 conversion events for CTA clicks, store links, trailer plays and form funnel drop-off',
         'View Transitions API for page transitions, fully disabled under prefers-reduced-motion',
       ],
@@ -57,14 +57,14 @@ const allProjects: Project[] = [
     },
     {
     id: 'counting-arrays',
-    title: 'Counting Arrays — Problem Solving',
+    title: 'Counting Arrays, Problem Solving',
     tagline: 'Div2 D / Div1 B competitive programming problem solved with DP + prefix-sum optimisation.',
     description:
-      'Competitive programming solution for counting arrays of length n with elements in [1, M] that have exactly K left-to-right maxima, output modulo 10⁹+7. The brute-force O(Mⁿ) is hopeless at contest constraints, and a naïve Stirling-number approach breaks when M < n and ignores repeated elements. The accepted O(n·K·M) solution builds a 2-D DP over (position, maxima-count, current-max-value) and collapses the inner O(M²) "new maximum" transition — summing over all smaller prior maxima — into an O(M) prefix-sum pass. Includes a brute-force validator and a randomised test-case generator for stress testing.',
+      'Competitive programming solution for counting arrays of length n with elements in [1, M] that have exactly K left-to-right maxima, output modulo 10⁹+7. The brute-force O(Mⁿ) is hopeless at contest constraints, and a naïve Stirling-number approach breaks when M < n and ignores repeated elements. The accepted O(n·K·M) solution builds a 2-D DP over (position, maxima-count, current-max-value) and collapses the inner O(M²) "new maximum" transition, summing over all smaller prior maxima, into an O(M) prefix-sum pass. Includes a brute-force validator and a randomised test-case generator for stress testing.',
     image: ph('1a3a5c', 'Counting+Arrays'),
     tech: ['Python', 'Dynamic Programming', 'Combinatorics', 'Prefix Sums', 'NumPy'],
     highlights: [
-      'Div2 D / Div1 B difficulty — nontrivial DP with a prefix-sum key insight',
+      'Div2 D / Div1 B difficulty, nontrivial DP with a prefix-sum key insight',
       'Three-attempt journey: brute force TLE → Stirling WA → optimised AC',
       'O(n·K·M) accepted solution using prefix-sum to cut O(M²) transition to O(M)',
       'Brute-force validator (solution_bf.py) for correctness checks on small inputs',
@@ -77,14 +77,14 @@ const allProjects: Project[] = [
   {
     id: 'sebbes-kokbok',
     title: 'Sebbes Kokbok',
-    tagline: 'Bilingual recipe collection — 45 dishes across Swedish, Korean, Chinese & Japanese cuisines.',
+    tagline: 'Bilingual recipe collection, 45 dishes across Swedish, Korean, Chinese & Japanese cuisines.',
     description:
       'A personal recipe showcase built with React + Vite, featuring 45 recipes spanning four cuisines: Swedish husmanskost, Korean royal court cuisine, Chinese home cooking, and Japanese everyday classics. The single-page app has a scroll-driven layout with recipe cards grouped by cuisine, click-through modals with full recipe details, and a language toggle between English and Swedish. Native scripts (Hangul, Hanzi, Kanji/Kana) are preserved in recipe names. Containerised with a multi-stage Docker build and deployed as a static site on Render via Nginx.',
     image: ph('c0392b', 'Sebbes+Kokbok'),
     tech: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express', 'Docker', 'Nginx', 'Render'],
     highlights: [
       '45 recipes across Swedish, Korean, Chinese and Japanese cuisines',
-      'Bilingual UI — full English/Swedish language toggle',
+      'Bilingual UI, full English/Swedish language toggle',
       'Native script preservation: Hangul, Hanzi, Kanji/Kana',
       'Scroll-driven layout with cuisine-grouped cards and detail modals',
       'Multi-stage Docker build served via Nginx on Render',
@@ -96,9 +96,9 @@ const allProjects: Project[] = [
   {
     id: 'Time-Converter',
     title: 'Time Converter',
-    tagline: 'Real-time clock for 600+ IANA timezones — search, filter, and copy in one click.',
+    tagline: 'Real-time clock for 600+ IANA timezones, search, filter, and copy in one click.',
     description:
-      'Browser-based timezone utility that displays live clocks for every IANA timezone — no build step, no backend, no dependencies. The page auto-updates every second using the native Intl.DateTimeFormat API. You can search by city, region, or country, or narrow down with region-based filters (Africa, Americas, Asia, Australia, Europe, Pacific). Each timezone card shows the current time, UTC offset, and a relative difference from your local clock (e.g. "+5:30h from you"), plus day badges when a zone is a full calendar day ahead or behind. A one-click copy button puts the time, date, and timezone name onto the clipboard. Deployed as a static file on Render — open the HTML and it just works.',
+      'Browser-based timezone utility that displays live clocks for every IANA timezone, no build step, no backend, no dependencies. The page auto-updates every second using the native Intl.DateTimeFormat API. You can search by city, region, or country, or narrow down with region-based filters (Africa, Americas, Asia, Australia, Europe, Pacific). Each timezone card shows the current time, UTC offset, and a relative difference from your local clock (e.g. "+5:30h from you"), plus day badges when a zone is a full calendar day ahead or behind. A one-click copy button puts the time, date, and timezone name onto the clipboard. Deployed as a static file on Render, open the HTML and it just works.',
     image: ph('1a5276', 'Time+Converter'),
     tech: ['HTML', 'CSS', 'JavaScript', 'Intl API', 'Render'],
     highlights: [
@@ -108,7 +108,7 @@ const allProjects: Project[] = [
       'UTC offset and relative time difference ("+5:30h from you") per card',
       'Day badges for zones a full calendar day ahead or behind',
       'One-click clipboard copy of time, date, and timezone name',
-      'Zero dependencies — pure vanilla HTML/CSS/JS, no build step required',
+      'Zero dependencies, pure vanilla HTML/CSS/JS, no build step required',
     ],
     github: 'https://github.com/ManaInfectedRP/Time-Converter',
     demo: 'https://time-converter-xi16.onrender.com',
@@ -118,7 +118,7 @@ const allProjects: Project[] = [
     id: 'song-studio',
     title: 'Song Studio',
     tagline:
-      'Desktop app that turns a one-line idea into a full song — lyrics, vocals & instrumentation.',
+      'Desktop app that turns a one-line idea into a full song, lyrics, vocals & instrumentation.',
     description:
       'Python desktop app that takes a free-form song concept ("a devil who fell in love with a fiery angel") and produces a finished mixed track. Generates structured lyrics with verses, choruses, bridge and outro, then renders audio through one of two backends: a fully-local pipeline (Meta MusicGen + Suno Bark + custom mixer) or a cloud singing path via the Suno API. Per-section regeneration lets you reroll any verse without touching the rest, and a custom Tkinter UI with animated gradient + particle layer ties it together.',
     image: ph('6a1b9a', 'Song+Studio'),
@@ -134,7 +134,7 @@ const allProjects: Project[] = [
     ],
     highlights: [
       'Two audio backends: local (MusicGen + Bark) or Suno cloud singing',
-      'Per-section regenerate — rewrites one verse, preserves the rest',
+      'Per-section regenerate, rewrites one verse, preserves the rest',
       'Live song-length estimator that matches the actual chunker',
       'Custom animated-gradient UI with player bar & 0–100% progress',
       'Rotating debug log truncated each run for focused sessions',
@@ -146,7 +146,7 @@ const allProjects: Project[] = [
   {
     id: 'PodPlayer-AI',
     title: 'PodPlayer AI',
-    tagline: 'Full-stack podcast & audiobook platform — PWA + React Native app sharing one FastAPI backend.',
+    tagline: 'Full-stack podcast & audiobook platform, PWA + React Native app sharing one FastAPI backend.',
     description:
       'A production podcast and audiobook platform built as both a Progressive Web App and a React Native (Expo) mobile app, connected to a shared FastAPI backend. Supports full audio/video streaming with background playback and offline downloads, AI-generated playlists (including Calendar Picks that pulls from the user\'s calendar), and a Creator Hub with analytics, Flash Drop announcements, and RSS podcast import. The platform includes an in-app PodCoin economy with 11 unlockable themes, avatar frames, and paywalled episode/podcast credits, plus a gamification layer of XP, levels, streaks, and achievement badges.',
     image: ph('4a90e2', 'PodPlayer+AI'),
@@ -164,10 +164,10 @@ const allProjects: Project[] = [
     ],
     highlights: [
       'Audio/video streaming with background playback, lock-screen controls, and offline downloads',
-      'AI playlists — "Made For You" and Calendar Picks built from the user\'s upcoming events',
+      'AI playlists, "Made For You" and Calendar Picks built from the user\'s upcoming events',
       'Creator Hub with episode analytics, Flash Drop recorder, and direct RSS podcast import',
       'In-app PodCoin store: 11 themes, avatar frames, and paywalled content unlocks',
-      'Gamification — XP, levels, streaks, and achievement badges per user account',
+      'Gamification, XP, levels, streaks, and achievement badges per user account',
       'Episode collections, timestamped bookmarks, voice notes, and full listening history',
       'Virtualised episode lists (react-virtual) supporting 500+ episode catalogs without jank',
       'PWA (web) and React Native (mobile) sharing one FastAPI/MongoDB backend',
@@ -179,7 +179,7 @@ const allProjects: Project[] = [
     id: 'work-searcher',
     title: 'WorkSearcher',
     tagline:
-      'Swedish job aggregator — React dashboard + FastAPI backend, AI-scored postings.',
+      'Swedish job aggregator, React dashboard + FastAPI backend, AI-scored postings.',
     description:
       'Full-stack job-search dashboard that aggregates Swedish job listings from JobTech / Arbetsförmedlingen, Adzuna, Greenhouse and Lever ATS feeds. A FastAPI backend orchestrates fetch → MinHash LSH near-duplicate removal → location/title filtering → optional OpenAI enrichment that produces a per-job summary and a relevance score using Structured Outputs. The React frontend lets you search by role and city and renders the deduped, scored results in a single table. Connector pattern makes adding new sources a one-file change.',
     image: ph('0b6e4f', 'WorkSearcher'),
@@ -193,7 +193,7 @@ const allProjects: Project[] = [
       'Docker',
     ],
     highlights: [
-      'Pluggable connector protocol — JobTech, Adzuna, Greenhouse, Lever',
+      'Pluggable connector protocol, JobTech, Adzuna, Greenhouse, Lever',
       'MinHash LSH near-duplicate removal across sources',
       'Per-job summary + relevance score via OpenAI Structured Outputs',
       'EN→SV translation pass for foreign listings',
@@ -207,7 +207,7 @@ const allProjects: Project[] = [
     id: 'sebbe-pygame',
     title: 'SebbePyGame',
     tagline:
-      'Endless wave survival ARPG in Python — 15 spells, support gems, deep skill tree.',
+      'Endless wave survival ARPG in Python, 15 spells, support gems, deep skill tree.',
     description:
       'Top-down wave-survival action RPG built with Python 3.11 and Pygame. Auto-cast spell system with 15 unique abilities, a 3-slot support-gem socket per spell that modifies behaviour, a passive skill tree, 12-slot equipment, crafting bench, and breach events. Enemies span chasers, rangers, elemental elites, mirror-reflect, vortex-placers and aura supports. Bosses every 50 waves, milestone bosses every 250 waves. Auto-saves to JSON after loot drops.',
     image: ph('8b0000', 'SebbePyGame'),
@@ -294,7 +294,7 @@ const allProjects: Project[] = [
     highlights: [
       'Album-art mode: uses embedded APIC or fallback image/black frame',
       'Background-video mode: loops MP4 and supports watermark delogo',
-      'Bundled ffmpeg (imageio-ffmpeg) — no system ffmpeg required',
+      'Bundled ffmpeg (imageio-ffmpeg), no system ffmpeg required',
       'Accurate audio-length matching with finite stream_loop handling',
       'CLI flags: --resolution, --crf, --preset, --fps, --default-image, --recursive, --overwrite',
       'Optional Tkinter GUI with drag-and-drop and PyInstaller single-file build',
@@ -375,7 +375,7 @@ const allProjects: Project[] = [
     id: 'voice-cloning',
     title: 'VoiceClone Studio',
     tagline:
-      'Clone any voice and synthesize speech — GUI + CLI, multi-language support.',
+      'Clone any voice and synthesize speech, GUI + CLI, multi-language support.',
     description:
       'Full-featured voice cloning and TTS toolkit built in Python. Zero-shot cloning via Coqui XTTS-v2, a standalone Windows GUI (optional standalone .exe), and a CLI for transcribe→translate→clone workflows. Supports multi-voice conversations, batch processing, and 17+ languages with optional GPU acceleration (CUDA).',
     image: ph('b8336a', 'VoiceClone+Studio'),
@@ -389,7 +389,7 @@ const allProjects: Project[] = [
       'PyInstaller',
     ],
     highlights: [
-      'Zero-shot voice cloning (Coqui XTTS-v2) — no training required',
+      'Zero-shot voice cloning (Coqui XTTS-v2), no training required',
       'Standalone Windows GUI with drag-and-drop workflow and .exe build',
       'CLI: transcribe → translate → clone, plus text-to-speech mode',
       'Multi-voice conversations, per-voice language setting, and batch processing',

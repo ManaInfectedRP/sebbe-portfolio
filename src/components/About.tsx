@@ -41,7 +41,7 @@ const experience = [
     place: 'Home',
   },
   {
-    period: '2024 — 2026',
+    period: '2024, 2026',
     role: 'Software Development Student (AI specialization)',
     place: 'NBI/Handelsakademin, Halmstad',
   },
@@ -51,7 +51,7 @@ const experience = [
     place: 'Podmanager.AI',
   },
   {
-    period: '2025 — 2025',
+    period: '2025, 2025',
     role: 'Full-Stack Developer LIA Intern',
     place: 'Podmanager.AI',
   },
@@ -61,7 +61,7 @@ const experience = [
     place: 'Enyroom AB, Halmstad',
   },
   {
-    period: '2019 — 2020',
+    period: '2019, 2020',
     role: 'Mechanic',
     place: 'Göstorps Nissan Bil AB, Laholm',
   }
