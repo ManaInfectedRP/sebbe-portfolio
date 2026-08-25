@@ -17,6 +17,26 @@ const ph = (color: string, text: string) =>
 
 const allProjects: Project[] = [
     {
+      id: 'system-monitor',
+      title: 'System Monitor',
+      tagline: 'Task Manager-style Windows desktop app in C# and WPF, live CPU, RAM, GPU, disk and network monitoring.',
+      description:
+        'A Task Manager-style desktop app for Windows, built in C# and WPF following MVVM. Shows CPU, RAM, GPU, disk and network usage in real time, with 60-second sparkline history graphs and green/yellow/red load coloring. The process list carries PID, CPU %, RAM, disk I/O and per-process GPU usage, with search, sort, launch, kill/force-kill, "open file location" and a details window. A disk tab scans in the background to surface the 10 largest folders anywhere on a drive. GPU and disk/network figures read directly from Windows performance counters, the same mechanism Task Manager itself uses, so no admin rights are needed for core functionality. Settings include launch-at-startup, forcing the dedicated GPU per app, and exporting the last 60 seconds of metrics to CSV.',
+      image: '/systemmonitor-logo.png',
+      tech: ['C#', '.NET 9', 'WPF', 'MVVM', 'Windows Performance Counters', 'ETW'],
+      highlights: [
+        'Real-time CPU, RAM, GPU, disk and network monitoring with 60s sparkline history',
+        'Process list: PID, CPU %, RAM, disk I/O, per-process GPU usage, search/sort/kill/launch',
+        'Background disk scanner surfaces the 10 largest folders on any drive',
+        'GPU usage and VRAM read from Windows performance counters, same source as Task Manager',
+        'No admin rights required for core features',
+        'CSV export of the last 60 seconds of metrics',
+        'Clean MVVM split: Models / Services / ViewModels / Views / Controls',
+      ],
+      github: 'https://github.com/ManaInfectedRP/System-Monitor',
+      year: '2026',
+    },
+    {
       id: 'unseen-worlds-unveiled',
       title: 'Unseen Worlds Unveiled',
       tagline: 'Dependency-free Cloudflare Worker site for an indie game studio I co-founded.',
