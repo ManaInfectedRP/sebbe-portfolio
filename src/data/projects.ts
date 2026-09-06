@@ -17,6 +17,27 @@ const ph = (color: string, text: string) =>
 
 const allProjects: Project[] = [
     {
+      id: 'escape-room-platform',
+      title: 'Escape Room Platform',
+      tagline: 'Multiplayer web escape room on .NET 10, ASP.NET Core, Blazor and SignalR, with rooms rendered in first-person 3D.',
+      description:
+        'A multiplayer web escape room where players enter a virtual room, investigate objects, solve interlocking puzzles, collect items and find the exit before the clock runs out. The point is not one escape room but a platform: the engine knows how to run a room, not what the room is, so each of the three shipped rooms is a single JSON file that defines its puzzles, dependency graph and 3D layout together. Rooms are walked around in first person with Three.js, drawing modelled .glb assets where they exist and blockout primitives where they do not, so a room is playable before any art is finished. The server is the referee: solutions never leave it, the clock is computed server-side, and unique database indexes refuse a puzzle solved twice or a hint charged twice. Room definitions are validated on load and a test plays every shipped room to its exit, so a broken dependency graph fails the build.',
+      image: ph('1b2838', 'Escape Room'),
+      tech: ['C#', '.NET 10', 'ASP.NET Core', 'Blazor Server', 'SignalR', 'EF Core', 'SQLite', 'Three.js', 'Docker'],
+      highlights: [
+        'Content-driven engine: a room is one JSON file, validated on load and rejected with a list of problems',
+        'Real-time multiplayer over SignalR, one solve reaches every player’s 3D view',
+        'Server-authoritative clock, score, inventory and puzzle state, solutions never serialised to the client',
+        'First-person Three.js renderer with GLB assets and blockout fallbacks, holding no game rules',
+        'Unique indexes make the database refuse a duplicate solve or hint charge, not just the code above it',
+        'Clean layering: Domain / Application / Infrastructure / Api / Web',
+        '95 tests, including every shipped room played start to finish and 3D layout checks',
+        'Docker Compose setup and a run script that supervises both processes',
+      ],
+      github: 'https://github.com/ManaInfectedRP/EscapeRoomDotnet',
+      year: '2026',
+    },
+    {
       id: 'system-monitor',
       title: 'System Monitor',
       tagline: 'Task Manager-style Windows desktop app in C# and WPF, live CPU, RAM, GPU, disk and network monitoring.',
