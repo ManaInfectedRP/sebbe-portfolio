@@ -17,6 +17,28 @@ const ph = (color: string, text: string) =>
 
 const allProjects: Project[] = [
     {
+      id: 'vanirix-orbital-command',
+      title: 'Vanirix Orbital Command',
+      tagline: 'Tools platform for SEO, analytics and business intelligence, built as Full-Stack Developer & CTO at Vanirix.',
+      description:
+        'Vanirix Orbital Command is the tools platform of Vanirix, a growth intelligence company where I am Full-Stack Developer and CTO. It gathers more than 25 tools in one place: SEO Intelligence, Site Intelligence, Keyword Explorer, BI Studio, Visitor Lab, Conversion Lab, Lead Intelligence, Competitor Radar, CrUX Pulse and more. BI Studio lets you import datasets, profile their columns and build dashboards from configurable chart tiles. Plans are sold through a built-in store, and access is controlled by a role-based permission matrix stored in the database, so every tool has its own permission and every page, API route and socket checks it. Teams get their own workspaces with calendars, tasks, notes, projects and video meetings next to the tools. Built with Next.js 15, React 19 and TypeScript on PostgreSQL with Drizzle, with AI features on the Anthropic API.',
+      image: '/vanirix-orbital-command.jpg',
+      tech: ['Next.js 15', 'React 19', 'TypeScript', 'PostgreSQL', 'Drizzle ORM', 'Tailwind CSS', 'WebSockets', 'Anthropic API', 'GSAP', 'Vitest', 'Railway'],
+      highlights: [
+        '25+ tools for SEO, analytics, BI, conversion and sales leads in one platform',
+        'BI Studio: dataset import, column profiler and a configurable dashboard grid',
+        'Role-based permission matrix in the database, enforced on every page, API route and socket',
+        'Store with plans and tool kits, plus usage tracking for staff',
+        'Team workspaces with calendars, tasks, notes, projects and video meetings',
+        'AI features built on the Anthropic API',
+        '60+ Vitest test files covering auth, billing, BI and the tools',
+        'Deployed on Railway with schema migrations and health checks on start',
+      ],
+      demo: 'https://vanirix.com',
+      year: '2026',
+      isPrivate: true,
+    },
+    {
       id: 'escape-room-platform',
       title: 'Escape Room Platform',
       tagline: 'Multiplayer web escape room on .NET 10, ASP.NET Core, Blazor and SignalR, with rooms rendered in first-person 3D.',
