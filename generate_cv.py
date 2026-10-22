@@ -6,6 +6,11 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 import copy
 import os
+import shutil
+import subprocess
+import tempfile
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 doc = Document()
 
@@ -95,7 +100,7 @@ def remove_table_borders(table):
 # ═══════════════════════════════════════════════════════════════════════════════
 #  HEADER, two-column table (text left, photo right)
 # ═══════════════════════════════════════════════════════════════════════════════
-PHOTO_PATH = r"c:\Users\quo\repos\SebbePortfolio2\public\me.jpg"
+PHOTO_PATH = os.path.join(HERE, "public", "me.jpg")
 
 header_tbl = doc.add_table(rows=1, cols=2)
 remove_table_borders(header_tbl)
@@ -158,9 +163,10 @@ add_section_heading(doc, "Profile")
 profile_p = doc.add_paragraph(
     "I started my career as a mechanic and warehouse worker in the automotive industry. "
     "That background taught me how to break down problems, follow procedures, and ship results, "
-    "skills I now apply to building software. Today I'm focused on full-stack development and AI. "
-    "I enjoy building real things people can use: video conferencing apps, REST APIs, desktop games, "
-    "and AI experiments. Actively looking for work."
+    "skills I now apply to building software. Today I'm Full-Stack Developer and CTO at Vanirix, "
+    "where I lead the development of Vanirix Orbital Command, a tools platform for SEO, analytics "
+    "and business intelligence. I enjoy building real things people can use: SEO and analytics "
+    "tools, video conferencing apps, REST APIs and AI experiments."
 )
 profile_p.runs[0].font.size       = Pt(10)
 profile_p.runs[0].font.color.rgb  = MID
@@ -172,6 +178,7 @@ set_spacing(profile_p, before=0, after=40, line=276)
 add_section_heading(doc, "Experience")
 
 experience = [
+    ("2026 – present", "Full-Stack Developer & CTO", "Vanirix"),
     ("2026",        "2nd LIA Full-Stack Developer",              "Podmanager.AI"),
     ("2025",        "Full-Stack Developer LIA Intern",           "Podmanager.AI"),
     ("2024 – 2026", "Software Development Student (AI spec.)",   "NBI/Handelsakademin, Halmstad"),
@@ -208,10 +215,10 @@ add_section_heading(doc, "Technical Skills")
 
 skill_groups = [
     ("Languages",   "TypeScript · JavaScript · Python · C# · HTML / CSS · SQL"),
-    ("Frontend",    "React · React Native · Vite · Tailwind CSS"),
+    ("Frontend",    "React · Next.js · React Native · Vite · Tailwind CSS"),
     ("Backend",     "Node.js · Express · FastAPI · .NET · REST APIs · WebRTC"),
-    ("Databases",   "PostgreSQL · MongoDB · SQLite · Entity Framework Core"),
-    ("AI / ML",     "PyTorch · OpenAI API · Coqui TTS · MusicGen · AI tooling"),
+    ("Databases",   "PostgreSQL · Drizzle ORM · MongoDB · SQLite · Entity Framework Core"),
+    ("AI / ML",     "PyTorch · OpenAI API · Anthropic API · Coqui TTS · MusicGen · AI tooling"),
     ("DevOps",      "Docker · Git · Render · Nginx · CI/CD"),
     ("Other",       "Unity · Pygame · Tkinter · Expo (React Native) · Zustand"),
 ]
@@ -233,6 +240,14 @@ for label, items in skill_groups:
 add_section_heading(doc, "Selected Projects")
 
 projects = [
+    (
+        "Vanirix Orbital Command", "2026", True,
+        "Tools platform for SEO, analytics and business intelligence, built and led as CTO at Vanirix.",
+        ["Next.js 15, React 19, TypeScript, PostgreSQL, Drizzle ORM, Tailwind CSS, WebSockets, Anthropic API, Vitest"],
+        ["25+ tools: SEO Intelligence, Site Intelligence, Keyword Explorer, BI Studio, Visitor Lab, Lead Intelligence",
+         "BI Studio with datasets, column profiling and a configurable dashboard grid",
+         "Team workspaces, store and plans, with a role-based permission matrix enforced on every page and API"],
+    ),
     (
         "PodPlayer AI", "2026", True,
         "Full-stack podcast & audiobook platform, PWA + React Native app sharing one FastAPI backend.",
@@ -420,6 +435,13 @@ for name, role_co, relation, email, phone in references:
 # ═══════════════════════════════════════════════════════════════════════════════
 #  Save
 # ═══════════════════════════════════════════════════════════════════════════════
-output = r"c:\Users\quo\repos\SebbePortfolio2\Sebastian_Larsson_CV.docx"
-doc.save(output)
+# Build the .docx in a temp folder, then convert it to PDF with LibreOffice
+SOFFICE = shutil.which("soffice") or r"C:\Program Files\LibreOffice\program\soffice.exe"
+output = os.path.join(HERE, "Sebastian_Larsson_CV.pdf")
+with tempfile.TemporaryDirectory() as tmp:
+    docx_path = os.path.join(tmp, "Sebastian_Larsson_CV.docx")
+    doc.save(docx_path)
+    subprocess.run([SOFFICE, "--headless", "--convert-to", "pdf", "--outdir", tmp, docx_path],
+                   check=True, capture_output=True)
+    shutil.copy(os.path.join(tmp, "Sebastian_Larsson_CV.pdf"), output)
 print(f"Saved: {output}")

@@ -27,18 +27,13 @@ const skills = [
 const experience = [
   {
     period: '2026 - present',
-    role: 'Founder & Full-Stack Developer',
-    place: 'www.Kodstigen.se',
+    role: 'Full-Stack Developer & CTO',
+    place: 'Vanirix',
   },
   {
     period: '2026 - present',
     role: 'Co-Founder',
     place: 'UnseenWorldsUnveiled.com',
-  },
-  {
-    period: '2026 - present',
-    role: 'Out of Work',
-    place: 'Home',
   },
   {
     period: '2024, 2026',
@@ -86,13 +81,14 @@ export default function About() {
             </p>
             <p>
               Today I'm focused on full-stack development and AI.
-              I enjoy building real things people can use: video conferencing apps, REST APIs, desktop games, and AI experiments.
-              I'm actively looking for Work.
+              I enjoy building real things people can use: SEO and analytics tools, video conferencing apps, REST APIs and AI experiments.
             </p>
 
             <p>
-              In 2026 i founded the website www.Kodstigen.se, where i am the Solo Developer.
-              A Learning Platform for people who want to learn programming in all type of technologies.
+              In 2026 I joined Vanirix, a growth intelligence company, as Full-Stack Developer and CTO.
+              I built the public website vanirix.com and lead the development of Vanirix Orbital Command, a tools platform for SEO, analytics and business intelligence.
+              It offers more than 25 tools, including SEO Intelligence, Site Intelligence, BI Studio, Visitor Lab and Lead Intelligence, with team workspaces and role-based access.
+              It is built with Next.js, React, TypeScript, PostgreSQL with Drizzle and the Anthropic API.
             </p>
 
             <div className="about__skills">
@@ -109,7 +105,7 @@ export default function About() {
             <h3>Experience</h3>
             <ol>
               {experience.map((e) => (
-                <li key={e.period}>
+                <li key={`${e.period}-${e.place}`}>
                   <span className="about__period">{e.period}</span>
                   <strong>{e.role}</strong>
                   <span className="about__place">{e.place}</span>

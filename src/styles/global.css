@@ -1030,25 +1030,10 @@ main > section {
   transform: translateY(-2px);
 }
 
-.contact__label {
-  display: block;
-  color: var(--accent);
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 0.15rem;
-}
-
 .contact__value {
   color: var(--text);
   font-size: 0.95rem;
   word-break: break-word;
-}
-
-.contact__text {
-  display: flex;
-  flex-direction: column;
   min-width: 0;
 }
 

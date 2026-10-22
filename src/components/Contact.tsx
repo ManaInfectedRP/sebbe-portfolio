@@ -21,7 +21,6 @@ export default function Contact() {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section__head">
-          <span className="section__eyebrow">Contact</span>
           <h2 className="section__title">Let's build something together.</h2>
           <p className="section__lead">
             Looking for an AI-focused developer for an LIA internship in 2026, or
@@ -33,10 +32,7 @@ export default function Contact() {
           {links.map((l) => (
             <li key={l.label}>
               <a href={l.href} target="_blank" rel="noopener noreferrer">
-                <div className="contact__text">
-                  <span className="contact__label">{l.label}</span>
-                  <span className="contact__value">{l.value}</span>
-                </div>
+                <span className="contact__value">{l.value}</span>
                 <svg
                   width="18"
                   height="18"
