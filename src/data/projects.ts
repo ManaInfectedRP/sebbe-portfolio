@@ -39,6 +39,27 @@ const allProjects: Project[] = [
       isPrivate: true,
     },
     {
+      id: 'kulor-ruta',
+      title: 'Kulör & Ruta',
+      tagline: 'A video editor with node-based colour grading and a game-style screen recorder, two desktop apps built around FFmpeg.',
+      description:
+        'Two companion Windows desktop apps covering capture and post-production. Ruta is a screen recorder in C# on .NET 10: it captures the desktop through DXGI Desktop Duplication and WASAPI, then encodes with NVENC through FFmpeg. It has a click-through FPS overlay, global hotkeys, screenshots, frame time benchmarks and an instant replay buffer that keeps the last minutes in a ring of segments on disk. Kulör is a video editor built with Electron, React and WebGL2, with a multi-track timeline, keyframes, titles, a serial colour node chain with curves, qualifiers and masks, video scopes, an audio mixer and export to H.264, H.265, ProRes and DNxHR. The core design decision in Kulör is one compositor: preview and export draw through the same shader, so a grade looks the same in the file as on screen, and the end-to-end test proves it by comparing exported frames with the preview. Both apps were profiled on an older 8-core CPU, where moving colour conversion out of FFmpeg took Kulör\'s 1080p export from 7.5 to about 28 fps and let Ruta record and buffer replay at the same time without dropped frames.',
+      image: '/kulor-ruta.jpg',
+      tech: ['C#', '.NET 10', 'Desktop Duplication', 'WASAPI', 'NVENC', 'FFmpeg', 'TypeScript', 'React', 'Electron', 'WebGL2', 'GLSL', 'Vitest'],
+      highlights: [
+        'Kulör: one WebGL2 compositor for preview and export, in 16-bit float so a grade can recover values past white',
+        'Serial node grading with lift, gamma, gain, curves, HSL qualifier and power windows, plus waveform, parade, vectorscope and histogram',
+        'Timeline with linked audio, trim, split, ripple delete, snapping, keyframes, dissolves and undo, written as pure functions',
+        'Titles with presets, outline, shadow and entrance animations, drawn sharp at any export resolution',
+        'Automatic proxies for formats the preview engine cannot play, while export always uses the original file',
+        'Ruta: constant frame rate capture with reference-counted frames, so a slow encoder never drifts video against audio',
+        'Records to MKV and remuxes to MP4, so a crash mid-recording does not lose the file',
+        '48 unit tests and 62 end-to-end checks in real Electron, with real mouse input and frame-exact export comparison',
+      ],
+      github: 'https://github.com/ManaInfectedRP/Kulor-Ruta',
+      year: '2026',
+    },
+    {
       id: 'escape-room-platform',
       title: 'Escape Room Platform',
       tagline: 'Multiplayer web escape room on .NET 10, ASP.NET Core, Blazor and SignalR, with rooms rendered in first-person 3D.',
